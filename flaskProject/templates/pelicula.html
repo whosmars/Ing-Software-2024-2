@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Película</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .btn-create { background-color: #28a745; }
+        .btn-read { background-color: #007bff; }
+        .btn-update { background-color: #ffc107; }
+        .btn-delete { background-color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Películas</h1>
+        <a href="{{url_for('pelicula.add_pelicula')}}" class="btn btn-create">Crear Película</a>
+        <a href="{{url_for('pelicula.show_pelicula')}}" class="btn btn-read">Ver Películas</a>
+        <a href="{{ url_for('pelicula.check_id_pelicula') }}" class="btn btn-update">Actualizar Película</a>
+        <a href="{{ url_for('pelicula.delete_pelicula') }}"class="btn btn-delete">Eliminar Película</a>
+    </div>
+</body>
+</html>

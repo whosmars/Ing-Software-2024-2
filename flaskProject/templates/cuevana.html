@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuevana Fake</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cuevana Fake</h1>
+        <a href="{{ url_for('pelicula.menu_pelicula') }}" class="btn">Películas</a>
+        <a href="{{ url_for('usuario.menu_usuario') }}" class="btn">Usuarios</a>
+        <a href="{{ url_for('renta.menu_renta') }}" class="btn">Rentas</a>
+    </div>
+</body>
+</html>

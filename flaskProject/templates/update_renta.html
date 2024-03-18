@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Renta</title>
+</head>
+<body>
+    <h1>Actualizar Renta</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flash-messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('renta.update_renta') }}" method="post">
+        <div>
+            <label for="idPelicula">ID de la Pelicula:</label>
+            <input type="text" id="idPelicula" name="idPelicula" required>
+        </div>
+        
+        <div>
+            <label for="idUsuario">ID del Usuario:</label>
+            <input type="text" id="idUsuario" name="idUsuario" required>
+        </div>
+        
+        <div>
+            <label for="estatus">Estatus de Entrega:</label>
+            <select id="estatus" name="estatus" required>
+                <option value="">Seleccionar estatus</option>
+                <option value="entregada">Entregada</option>
+                <option value="pendiente">Pendiente</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Actualizar Renta</button>
+        </div>
+    </form>
+</body>
+</html>

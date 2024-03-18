@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Rentas</title>
+    <!-- Enlace a hojas de estilo si es necesario -->
+</head>
+<body>
+    <h1>Listado de Rentas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID Renta</th>
+                <th>ID Usuario</th>
+                <th>ID Película</th>
+                <th>Fecha de Renta</th>
+                <th>Días de Renta</th>
+                <th>Estatus</th>
+                <!-- Agrega más columnas si necesitas -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Suponiendo que tienes una variable 'rentas' que es una lista de objetos de renta -->
+            {% for renta in rentas %}
+            <tr>
+                <td>{{ renta.idRentar }}</td>
+                <td>{{ renta.idUsuario }}</td>
+                <td>{{ renta.idPelicula }}</td>
+                <td>{{ renta.fecha_renta.strftime('%Y-%m-%d') }}</td>
+                <td>{{ renta.dias_de_renta }}</td>
+                <td>{{ renta.estatus  }}</td>
+                <!-- Añade más celdas si es necesario -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

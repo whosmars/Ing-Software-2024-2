@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Películas</title>
+    <!-- Enlace a hojas de estilo si es necesario -->
+</head>
+<body>
+    <h1>Películas Disponibles</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Género</th>
+                <th>Duración (min)</th>
+                <th>Inventario</th>
+                <!-- Agrega más columnas si necesitas -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Suponiendo que tienes una variable 'peliculas' que es una lista de objetos de película -->
+            {% for pelicula in peliculas %}
+            <tr>
+                <td>{{ pelicula.idPelicula }}</td>
+                <td>{{ pelicula.nombre }}</td>
+                <td>{{ pelicula.genero }}</td>
+                <td>{{ pelicula.duracion }}</td>
+                <td>{{ pelicula.inventario }}</td>
+                <!-- Añade más celdas si es necesario -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

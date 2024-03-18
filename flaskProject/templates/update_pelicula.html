@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Datos de la Película</title>
+    <!-- Incluye aquí tus hojas de estilo o archivos de script necesarios -->
+</head>
+<body>
+    <h1>Actualizar Datos de la Película</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="flash-message">
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('pelicula.update_pelicula') }}" method="post">
+        <!-- El campo ID no es editable y se envía como oculto -->
+        <input type="hidden" name="idPelicula" value="{{ pelicula.idPelicula }}">
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="{{ pelicula.nombre }}" required>
+        </div>
+        <div>
+            <label for="genero">Género:</label>
+            <input type="text" id="genero" name="genero" value="{{ pelicula.genero }}" required>
+        </div>
+        <div>
+            <label for="duracion">Duración:</label>
+            <input type="number" id="duracion" name="duracion" value="{{ pelicula.duracion }}" required>
+        </div>
+        <div>
+            <label for="inventario">Inventario:</label>
+            <input type="number" id="inventario" name="inventario" value="{{ pelicula.inventario }}" required>
+        </div>
+        <div>
+            <button type="submit">Actualizar Película</button>
+        </div>
+    </form>
+</body>
+</html>

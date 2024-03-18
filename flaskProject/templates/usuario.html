@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .btn-create { background-color: #4CAF50; }
+        .btn-read { background-color: #2196F3; }
+        .btn-update { background-color: #FFC107; }
+        .btn-delete { background-color: #F44336; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Usuarios</h1>
+        <a href="{{ url_for('usuario.add_usuario') }}" class="btn btn-create">Crear Usuario</a>
+        <a href="{{ url_for('usuario.show_usuario') }}" class="btn btn-read">Ver Usuarios</a>
+        <a href="{{ url_for('usuario.check_id_usuario') }}" class="btn btn-update">Actualizar Usuario</a>
+        <a href="{{ url_for('usuario.delete_usuario') }}" class="btn btn-delete">Eliminar Usuario</a>
+    </div>
+</body>
+</html>
