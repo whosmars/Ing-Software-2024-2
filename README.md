@@ -6,7 +6,9 @@ Repositorio oficial de la materia de Ingenieria de Software de la Facultad de Ci
 - Se cambio el nombre de ClonBuster a Cuevana por los jajas xd
 - Se ha optado por manejar la completitud de lasa solicitudes de add-<alchemyClass> a traves de los HTML correspendidos, dando lugar a que ninguna solicitud genere errores
 - El manejo de los delete-<Pelicula,Usuario> tambien afecta a las Rentas asociadas en la bd
-- Al descargar el repo es posible que el ambiente no funcione, por lo que se debera de crear uno nuevo con los requirements.txt
+- Al descargar el repo es posible que el ambiente no funcione, por lo que se debera de crear uno nuevo con los requirements.txt Y ADEMAS INSTALAR CRYPTOGRAPHY aparte
+'''bash
+cryptography==42.0.5
 
 ## Profesores:
 
