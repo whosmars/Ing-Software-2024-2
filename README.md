@@ -8,9 +8,12 @@ Repositorio oficial de la materia de Ingenieria de Software de la Facultad de Ci
 - El manejo de los delete-<Pelicula,Usuario> tambien afecta a las Rentas asociadas en la bd
 - Al descargar el repo es posible que el ambiente no funcione, por lo que se debera de crear uno nuevo con los requirements.txt Y ADEMAS INSTALAR CRYPTOGRAPHY aparte
 
-'''bash
-cryptography==42.0.5
-'''
+```bash
+pip install -r requirements.txt
+```
+```bash
+pip install cryptography
+```
 
 ## Profesores:
 
