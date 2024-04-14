@@ -1,0 +1,22 @@
+/* Styles.css */
+
+.body-background {
+  background-color: #e8e8e8; /* Color de fondo para todo el cuerpo de la página */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupar todo el alto de la ventana gráfica */
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #e8e8e8; /* Color de fondo para el contenedor de tarjetas */
+}
+
+.card {
+  background-color: #ffffff; /* Color de fondo para las tarjetas individuales */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para las tarjetas */
+  border-radius: 10px; /* Bordes redondeados para las tarjetas */
+  padding: 20px; /* Espaciado interno para las tarjetas */
+}

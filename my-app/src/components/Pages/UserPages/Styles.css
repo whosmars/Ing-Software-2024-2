@@ -1,0 +1,10 @@
+/* Styles.css */
+.card-container {
+    display: flex;
+  justify-content: center;
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Ocupar todo el alto de la ventana gráfica */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+  
