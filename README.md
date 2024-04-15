@@ -3,7 +3,7 @@ Repositorio oficial de la materia de Ingenieria de Software de la Facultad de Ci
 
 ## Práctica
 
-Número 4
+4-react
 
 ## Alumno
 
